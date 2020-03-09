@@ -1,0 +1,94 @@
+::-moz-selection { background: rgba(0,0,0,0); }
+::selection { background: rgba(0,0,0,0); }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color:#000000;
+    color:#ffffff;
+    cursor: url('/Users/jrafonso/Desktop/cena/assets/cursor_hover.png') 20 2, auto;
+    filter: blur(40px);
+    transform: scale3d(1,0,1);;
+    transition: filter 1s ease-out, transform 1s ease-out;
+    overflow: hidden;
+    position: fixed;
+    font-size:28px;
+    line-height: 32px;
+    font-family: 'Press Start 2P' ;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width:100%;
+    float:left;
+    background: #000;
+    transition: background 1s ease-out;
+}
+
+#menu li {
+    display: block;
+    width: 100%;
+    position: relative;
+    float:left;
+    width:100%;
+}
+
+#menu li:hover, #menu li:focus, #menu li:active {
+    background-color:#00FF00;
+    color: #000000;
+    cursor: url('/Users/jrafonso/Desktop/cena/assets/cursor.png') 20 2, auto;
+    
+}
+
+#app {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.alignLeft {
+    position: relative;
+    float:left;
+    padding:5px 20px;
+}
+.alignRight {
+    position: relative;
+    float:right;
+    padding:5px 20px;
+}
+
+#info-zone {
+    position: relative;
+    float:left;
+    padding: 0 25px 25px 25px;
+    margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#anim {
+    animation: anim 1s infinite;
+    width: 30px;
+    display: block;
+    height: 35px;
+}
+@keyframes anim {
+    0% {color:#000; background:#000;}
+    90% {color:#fff; background:#fff;}
+    100% {color:#000; background:#000;}
+}
